@@ -11,6 +11,8 @@ import Shivam_Durbule from '@/app/data/Profiles/Shivam_Durbule.jpg';
 import Achal_Kharkate from '@/app/data/Profiles/Achal_Kharkate.jpg';
 import KRUTIKA_MESHRAM from '@/app/data/Profiles/Krutika_Meshram.jpg';
 import Sakshi_Thakare from '@/app/data/Profiles/Sakshi_Thakare.jpg';
+import Samiksha_Sawant from '@/app/data/Profiles/Samiksha_Sawant.jpeg';
+import Aditya_Alat from '@/app/data/Profiles/Aditya_Alat.jpg';
 
 import Gauri_Nagpure from '@/app/data/Profiles/Gauri_Nagpure.jpg';
 import Priyanshu_Behere from '@/app/data/Profiles/Priyanshu_behere.jpg';
@@ -22,6 +24,9 @@ import Abhilash_Dhote from '@/app/data/Profiles/Abhilash_Dhote.jpg';
 import Piyush_Bhoyar from '@/app/data/Profiles/Piyush_Bhoyar.jpg';
 import Varad_Telang from '@/app/data/Profiles/Varad_Telang.webp';
 import Lalit_Mendhule from '@/app/data/Profiles/Lalit_Mendhule.jpg';
+import Shahnawaz_Khan from '@/app/data/Profiles/Shahnawaz_Khan.png';
+import Ujwal_Raut from '@/app/data/Profiles/Ujwal_Raut.jpg';
+import Durgesh_Pawar from '@/app/data/Profiles/Durgesh_Pawar.jpeg';
 
 import Prajwal_Potfode from '@/app/data/Profiles/Prajwal_Potfode.jpg';
 import Tanmay_Singewar from '@/app/data/Profiles/Tanmay_Singewar.jpeg';
@@ -31,7 +36,12 @@ import Rushikesh_Sarate from '@/app/data/Profiles/Rushikesh_Sarate.jpg';
 import Sneha_Satarke from '@/app/data/Profiles/Sneha_Satarke.jpg';
 import Tushar_Bodhe from '@/app/data/Profiles/Tushar_Bodhe.jpg';
 
-import { name } from 'file-loader';
+import Tanishq_Mahalle from '@/app/data/Profiles/Tanishq_Mahalle.jpeg';
+import Yogesh_Rathod from '@/app/data/Profiles/Yogesh_Rathod.jpeg';
+import Paras_Pethe from '@/app/data/Profiles/Paras_Pethe.jpeg';
+import Aayush_Borkar from '@/app/data/Profiles/Aayush_Borkar.jpeg';
+import Vinayak_Shinde from '@/app/data/Profiles/Vinayak_Shinde.jpg';
+
 
 // CTSC TEAMS
 const PRESIDENTS = [
@@ -74,7 +84,7 @@ const CTSC_CORE_TEAM = [
     },
     {
         name : "Tanishq Mahalle",
-        image: '',
+        image: Tanishq_Mahalle,
         post : "Publicity Head"
     },
     {
@@ -94,7 +104,7 @@ const CTSC_CORE_TEAM = [
     },
     {
         name : "Aditya Alat",
-        image: '',
+        image: Aditya_Alat,
         post : "Event Management & Hall Management Head"
     },
     {
@@ -142,7 +152,7 @@ const CTSC_SEMICORE_TEAM = [
     },
     {
         name : "Durgesh Pawar",
-        image: '',
+        image: Durgesh_Pawar,
         post : "Publicity Co-Head"
     },
     {
@@ -157,7 +167,7 @@ const CTSC_SEMICORE_TEAM = [
     },
     {
         name : "Samiksha Sawant",
-        image: '',
+        image: Samiksha_Sawant,
         post : "Cultural Co-Head"
     },
     {
@@ -175,7 +185,7 @@ const CTSC_SEMICORE_TEAM = [
 const COMPUFEST_CORE_TEAM = [
     {
         name : 'Vinayak Shinde',
-        image: '',
+        image: Vinayak_Shinde,
         post : "Student Representative"
     },
     {
@@ -185,7 +195,7 @@ const COMPUFEST_CORE_TEAM = [
     },
     {
         name : 'Shahnawaz Khan',
-        image: '',
+        image: Shahnawaz_Khan,
         post : "Cultural Head"
     },
     {
@@ -200,12 +210,12 @@ const COMPUFEST_CORE_TEAM = [
     },
     {
         name : 'Paras Pethe',
-        image: '',
+        image: Paras_Pethe,
         post : "Social Media Head"
     },
     {
         name : 'Yogesh Rathod',
-        image: '',
+        image: Yogesh_Rathod,
         post : "Sports Head"
     },
     {
@@ -215,7 +225,7 @@ const COMPUFEST_CORE_TEAM = [
     },
     {
         name : "Ujwal Raut",
-        image: '',
+        image: Ujwal_Raut,
         post : "Database Head"
     }
 ];
@@ -223,7 +233,7 @@ const COMPUFEST_CORE_TEAM = [
 const COMPUFEST_TEAMS_SEMICORE = [
     {
         name : 'Ayush Borkar',
-        image: '',
+        image: Aayush_Borkar,
         post : "Design Co-Head"
     },
     {

@@ -5,12 +5,15 @@ import Image from "next/image";
 import CardHEader from "@/app/assets/card_header.svg";
 import EnrollNowButton from "@/app/assets/enroll_now.svg";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
-function EventCard({event}) {
-  const router = useRouter()
+function EventCard({ event }) {
+  const router = useRouter();
   return (
-    <div className="mt-12 bg-[#3D3D3D] bg-opacity-50 max-w-[400px] justify-center items-center " key={event.eventId}>
+    <div
+      className="mt-12 bg-[#3D3D3D] bg-opacity-50 max-w-[400px] justify-center items-center "
+      key={event.eventId}
+    >
       <Image
         src={CardHEader}
         alt="Event Title"
@@ -25,9 +28,7 @@ function EventCard({event}) {
         <p className="text-red-700 text-center text-sm my-2">
           {event.subTitle}
         </p>
-        <p className="text-[#B0B0B0] text-center text-xs">
-          {event.dec}
-        </p>
+        <p className="text-[#B0B0B0] text-center text-xs">{event.dec}</p>
       </div>
 
       <hr className="w-full h-1 mx-auto bg-black border-0 dark:bg-black" />
@@ -45,19 +46,46 @@ function EventCard({event}) {
         <div className="flex flex-row  p-2 text-white text-left font-bills gap-4 text-sm justify-around">
           <div>
             <p className="text-white text-xl font-bold">ENTRY FEES</p>
-            <p className="text-red-700 text-2xl font-bold text-center">₹{event.entryFee}</p>
+            <p className="text-red-700 text-2xl font-bold text-center">
+              {event.entryFee == "0" ? "FREE" : <span>₹{event.entryFee}</span>}
+            </p>
           </div>
-          <div className="font-bold text-lg">
-            {event.price[0] ? <p>
-              1st PRICE - <span className="text-red-700 text-xl">₹ {event.price[0]}</span>
-            </p> : null}
-            {
-              event.price[1] ? <p>2nd PRICE - <span className="text-red-700 text-xl">₹ {event.price[1]}</span></p> : null
-            }
-            {
-              event.price[2] ? <p>3rd PRICE - <span className="text-red-700 text-xl">₹ {event.price[2]}</span></p> : null
-            }
-          </div>
+
+          {event.eventId == "5" ? (
+            <div className="font-bold text-lg">
+              <p>
+                Pool Prize -{" "}
+                <span className="text-red-700 text-xl">₹ {event.price[0]}</span>
+              </p>
+            </div>
+          ) : (
+            <div className="font-bold text-lg">
+              {event.price[0] ? (
+                <p>
+                  1st PRICE -{" "}
+                  <span className="text-red-700 text-xl">
+                    ₹ {event.price[0]}
+                  </span>
+                </p>
+              ) : null}
+              {event.price[1] ? (
+                <p>
+                  2nd PRICE -{" "}
+                  <span className="text-red-700 text-xl">
+                    ₹ {event.price[1]}
+                  </span>
+                </p>
+              ) : null}
+              {event.price[2] ? (
+                <p>
+                  3rd PRICE -{" "}
+                  <span className="text-red-700 text-xl">
+                    ₹ {event.price[2]}
+                  </span>
+                </p>
+              ) : null}
+            </div>
+          )}
         </div>
         <div className="flex flex-row justify-around p-2">
           <Image

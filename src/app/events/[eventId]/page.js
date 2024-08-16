@@ -9,9 +9,11 @@ import Back from "@/app/assets/back.svg";
 import endPng from "@/app/assets/end.png";
 
 import { useRouter, useParams } from "next/navigation";
-import banners from "@/app/data/Flyer/banner.png";
 import { NON_TEC_EVENTS, TEC_EVENTS } from "@/app/data/events.data";
 
+import Instagram from "@/app/assets/instagram.png";
+import Whatsapp from "@/app/assets/whatsapp.png";
+import Link from "next/link";
 
 function Event() {
   const router = useRouter();
@@ -28,7 +30,10 @@ function Event() {
     }, 10);
   }, []);
 
-  const event = eventId > 99 ? NON_TEC_EVENTS.find((event) => event.eventId === eventId) : TEC_EVENTS.find((event) => event.eventId === eventId);
+  const event =
+    eventId > 99
+      ? NON_TEC_EVENTS.find((event) => event.eventId === eventId)
+      : TEC_EVENTS.find((event) => event.eventId === eventId);
 
   return (
     <div className="relative min-h-screen overflow-auto bg-black">
@@ -70,8 +75,15 @@ function Event() {
                         <p className="font-bold text-white font-bills text-5xl mt-5 text-center">
                           {event.title}
                         </p>
-                        <div className="block g:hidden h-full justify-center items-center m-auto">
-                          {/* <Image src={banners} width={1000} className="w-fit h-fit"  priority /> */}
+                        <div className="block g:hidden h-full justify-center items-center m-auto lg:hidden mt-10">
+                          {/* {event.flyer ? (
+                            <Image
+                              src={event.flyer}
+                              width={1000}
+                              className="w-fit h-fit"
+                              priority
+                            />
+                          ) : null} */}
                         </div>
                         <p className="font-bold text-red-600 font-port text-lg mt-5 lg:mt-0 text-center">
                           {event.subTitle}
@@ -86,36 +98,47 @@ function Event() {
                             ENTRY FEES
                           </p>
                           <p className="text-red-700 font-bold text-3xl font-bills text-center m-auto">
-                            ₹{event.entryFee}
+                          {event.entryFee == "0" ? "FREE" : <span>₹{event.entryFee}</span>}
                           </p>
-                          <div className="sm:w-fit text-center mt-20 sm:mt-0 hidden lg:block font-bold font-bills pt-10 text-lg">
-                            {event.price[0] ? (
-                              <p className="text-center text-xl">
-                                1st PRICE -{" "}
-                                <span className="text-red-700">
+                          {event.eventId == "5" ? (
+                            <div className="sm:w-fit text-center mt-20 sm:mt-0 hidden lg:block font-bold font-bills pt-10 text-lg">
+                              <p>
+                                Pool Prize -{" "}
+                                <span className="text-red-700 text-xl">
                                   ₹ {event.price[0]}
                                 </span>
                               </p>
-                            ) : null}
-                            <div className="flex flex-row items-center justify-around gap-6 mt-2 text-xl">
-                              {event.price[1] ? (
-                                <p>
-                                  2nd PRICE -{" "}
-                                  <span className="text-red-700">
-                                    ₹ {event.price[1]}
-                                  </span>
-                                </p>
-                              ) : null}
-                              {event.price[2] ? (
-                                <p>
-                                  3rd PRICE -{" "}
-                                  <span className="text-red-700">
-                                    ₹ {event.price[2]}
-                                  </span>
-                                </p>
-                              ) : null}
                             </div>
-                          </div>
+                          ) : (
+                            <div className="sm:w-fit text-center mt-20 sm:mt-0 hidden lg:block font-bold font-bills pt-10 text-lg">
+                              {event.price[0] ? (
+                                <p className="text-center text-xl">
+                                  1st PRICE -{" "}
+                                  <span className="text-red-700">
+                                    ₹ {event.price[0]}
+                                  </span>
+                                </p>
+                              ) : null}
+                              <div className="flex flex-row items-center justify-around gap-6 mt-2 text-xl">
+                                {event.price[1] ? (
+                                  <p>
+                                    2nd PRICE -{" "}
+                                    <span className="text-red-700">
+                                      ₹ {event.price[1]}
+                                    </span>
+                                  </p>
+                                ) : null}
+                                {event.price[2] ? (
+                                  <p>
+                                    3rd PRICE -{" "}
+                                    <span className="text-red-700">
+                                      ₹ {event.price[2]}
+                                    </span>
+                                  </p>
+                                ) : null}
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
                       {event.formLink ? (
@@ -130,10 +153,32 @@ function Event() {
                           </a>
                         </div>
                       ) : null}
+                      <p className="font-bold font-port text-sm mt-10 text-center">
+                        ------------------- Connect Us -------------------
+                      </p>
+                      <div className="flex flex-row m-auto items-center justify-around w-40 mt-5">
+                        <a href="https://www.instagram.com/compufest_ycce2k24/">
+                          <Image
+                            alt="Event Title"
+                            src={Instagram}
+                            height={30}
+                          />
+                        </a>
+                        <a href="https://chat.whatsapp.com/JscrS8TYik9LgnomY6cbHe">
+                          <Image alt="Event Title" src={Whatsapp} height={30} />
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div className="hidden w-4/6 lg:block h-full justify-center items-center m-auto">
-                    {/* <Image src={banners} priority /> */}
+                    {/* {event.flyer ? (
+                      <Image
+                        src={event.flyer}
+                        width={1000}
+                        className="w-fit h-fit"
+                        priority
+                      />
+                    ) : null} */}
                   </div>
                 </div>
               </div>

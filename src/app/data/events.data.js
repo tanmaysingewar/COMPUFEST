@@ -1,3 +1,18 @@
+import Global_Careers from '@/app/data/Flyer/Global_Careers.png';
+import Hawkins_ML_Hunt from '@/app/data/Flyer/Hawkins_ML_Hunt.png';
+import Web_Tech_Seminar from '@/app/data/Flyer/Web_Tech_Seminar.png';
+import Tech_Hackathon from '@/app/data/Flyer/Tech_Hackathon.png';
+import Optimizer from '@/app/data/Flyer/Optimizer.png';
+import Versus_Coding from '@/app/data/Flyer/Versus_Coding.png';
+
+import Lens_Crafter from '@/app/data/Flyer/Lens_Crafter.png';
+import Chess from '@/app/data/Flyer/Chess.png';
+import Tug_of_War from '@/app/data/Flyer/Tug_of_War.png';
+import Mock_Parliament from '@/app/data/Flyer/Mock_Parliament.png';
+import Smash_Kartz from '@/app/data/Flyer/Smash_Kartz.png';
+import Valorant from '@/app/data/Flyer/Valorant.png';
+import BGMI_PubG from '@/app/data/Flyer/BGMI_PubG.png';
+
 const TEC_EVENTS = [
   {
     eventId: "1",
@@ -8,9 +23,10 @@ const TEC_EVENTS = [
     time: "10:00 AM",
     venue: "New ccc",
     duration: "2 hours",
-    entryFee: "100",
+    entryFee: "99",
     price: [],
     formLink: "",
+    flyer: ''
   },
   {
     eventId: "2",
@@ -21,9 +37,10 @@ const TEC_EVENTS = [
     time: "7:00 PM",
     venue: "Online",
     duration: "",
-    entryFee: "free",
+    entryFee: "0",
     price: [],
     formLink: "",
+    flyer: Global_Careers
   },
   {
     eventId: "3",
@@ -37,12 +54,13 @@ const TEC_EVENTS = [
     entryFee: "70",
     price: [900, 500, 300],
     formLink: "https://forms.gle/cMgbSws3MMR85njVA",
+    flyer: Hawkins_ML_Hunt
   },
   {
     eventId: "4",
-    title: "Web Tech Seminar",
+    title: "Webnetics",
     subTitle: "Discover the Latest in Web Tech",
-    dec: "A seminar focused on the latest trends and technologies in web development.",
+    dec: "A seminar focused on the latest trends and technologies in web development along with hands-on project building.",
     date: "21 August 2024",
     time: "10:00 AM",
     venue: "AIDS Lab-2",
@@ -50,6 +68,7 @@ const TEC_EVENTS = [
     entryFee: "69",
     price: [],
     formLink: "https://forms.gle/zWctR5m4v5JWDwp8A",
+    flyer: Web_Tech_Seminar
   },
   {
     eventId: "5",
@@ -61,12 +80,13 @@ const TEC_EVENTS = [
     venue: "AIDS Lab-2",
     duration: "9 hours",
     entryFee: "250",
-    price: [2000],
+    price: [40000],
     formLink: "https://forms.gle/R9sAM2zcABp2jatF9",
+    flyer: Tech_Hackathon
   },
   {
     eventId: "6",
-    title: "Video Editing (On theme)",
+    title: "Video Editing (theme-based)",
     subTitle: "Show Your Editing Prowess",
     dec: "A themed video editing competition for creative minds.",
     date: "23 August 2024",
@@ -76,10 +96,11 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [250],
     formLink: "",
+    flyer: ''
   },
   {
     eventId: "7",
-    title: "TechBuzzzzz",
+    title: "TechBuzz",
     subTitle: "Buzz Around Tech",
     dec: "An interactive session where participants discuss and present trending tech topics.",
     date: "23 August 2024",
@@ -89,6 +110,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [500],
     formLink: "",
+    flyer: ''
   },
   {
     eventId: "8",
@@ -99,22 +121,24 @@ const TEC_EVENTS = [
     time: "10:00 AM",
     venue: "AIDS-Lab 1",
     duration: "2 hours",
-    entryFee: "FREE",
+    entryFee: "0",
     price: [0],
     formLink: "",
+    flyer: ''
   },
   {
     eventId: "9",
-    title: "Optimizer (International)",
+    title: "Optimizer (International level event)",
     subTitle: "Optimize for Success",
-    dec: "An international event focusing on optimization techniques and strategies.",
+    dec: "Put your programming prowess to the test in our exciting coding contest and it is free!!!",
     date: "24 August 2024",
     time: "10:00 AM",
     venue: "Hybrid",
     duration: "2.5 hours",
-    entryFee: "free",
+    entryFee: "0",
     price: [0],
     formLink: "https://forms.gle/nxU2oip6rXJPLjJo6",
+    flyer: Optimizer
   },
   {
     eventId: "10",
@@ -128,12 +152,13 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [],
     formLink: "",
+    flyer: ''
   },
   {
     eventId: "11",
     title: "Scripted Secrets",
-    subTitle: "Unveil the Code",
-    dec: "A competitive event focused on solving complex coding challenges.",
+    subTitle: "Unveil the Code and find the treasure",
+    dec: "Assemble a team of 4 and use your collective technical skills to solve challenging problems and uncover hidden treasures.",
     date: "24 August 2024",
     time: "12:00 PM",
     venue: "AIDS Lab 2 & 3",
@@ -141,6 +166,7 @@ const TEC_EVENTS = [
     entryFee: "250",
     price: [2000, 1000],
     formLink: "https://forms.gle/4u5Un76d8MXvMGtg7",
+    flyer: ''
   },
   {
     eventId: "12",
@@ -154,12 +180,13 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [300],
     formLink: "",
+    flyer: ''
   },
   {
     eventId: "13",
     title: "Versus Coding",
     subTitle: "Code to Compete",
-    dec: "A coding competition where the best developers compete head-to-head.",
+    dec: "A coding competition where the best coders compete head-to-head.",
     date: "24 August 2024",
     time: "1:30 PM",
     venue: "AIDS Lab-2 & online",
@@ -167,12 +194,13 @@ const TEC_EVENTS = [
     entryFee: "100",
     price: [1000, 500],
     formLink: "https://forms.gle/YFVvqaaYNsARQkVAA",
+    flyer: Versus_Coding
   },
   {
     eventId: "14",
     title: "Mastering The Modern Engineer's Toolkit Workshop",
-    subTitle: "Equip Yourself for Success",
-    dec: "A workshop that provides engineers with the latest tools and techniques for success.",
+    subTitle: "Bridging College Curriculum with Real-World Engineering",
+    dec: "Discover how to apply your college curriculum to real-world engineering challenges.",
     date: "24 August 2024",
     time: "TBD",
     venue: "Lab 2",
@@ -180,6 +208,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [],
     formLink: "",
+    flyer: ''
   },
 ];
 
@@ -189,7 +218,7 @@ const NON_TEC_EVENTS = [
     eventId: "100",
     title: "Lens Crafter",
     subTitle: "Capture the Perfect Shot",
-    dec: "A photography competition where participants showcase their lenscrafting skills.",
+    dec: "A reel-making competition where participants showcase their skills.",
     date: "23 & 24 August 2024",
     time: "9:00 AM",
     venue: "TBD",
@@ -197,6 +226,7 @@ const NON_TEC_EVENTS = [
     entryFee: "70",
     price: [500, 300],
     formLink: "https://forms.gle/6QnzQKt3XY1mbvEo6",
+    flyer: Lens_Crafter
   },
   {
     eventId: "102",
@@ -210,6 +240,7 @@ const NON_TEC_EVENTS = [
     entryFee: "50",
     price: [800, 600],
     formLink: "https://forms.gle/Gaafrnz28EP8pcnz7",
+    flyer: Chess
   },
   {
     eventId: "103",
@@ -220,9 +251,10 @@ const NON_TEC_EVENTS = [
     time: "12:00 PM",
     venue: "Infront of CCC",
     duration: "2 hours",
-    entryFee: "250 per team of 5",
+    entryFee: "250",
     price: [1000],
     formLink: "https://forms.gle/9om8rNvMKV5tUZSK9",
+    flyer: Tug_of_War
   },
   {
     eventId: "104",
@@ -236,10 +268,11 @@ const NON_TEC_EVENTS = [
     entryFee: "150",
     price: [1500, 700],
     formLink: "https://forms.gle/B7PGJYhVZUswBvkV9",
+    flyer: Mock_Parliament
   },
   {
     eventId: "105",
-    title: "Smash Kartz",
+    title: "Smash Karts",
     subTitle: "Race to Victory",
     dec: "An online kart racing game competition with exciting challenges.",
     date: "23 August 2024",
@@ -249,6 +282,7 @@ const NON_TEC_EVENTS = [
     entryFee: "50",
     price: [500],
     formLink: "https://forms.gle/XbprttVdCg5RibtUA",
+    flyer: Smash_Kartz
   },
   {
     eventId: "106",
@@ -260,8 +294,9 @@ const NON_TEC_EVENTS = [
     venue: "Online",
     duration: "2 hours",
     entryFee: "300",
-    price: [3000],
+    price: [1500],
     formLink: "https://forms.gle/mpaMitojkCPQqjio7",
+    flyer: Valorant
   },
   {
     eventId: "107",
@@ -275,6 +310,7 @@ const NON_TEC_EVENTS = [
     entryFee: "100",
     price: [3000, 1000],
     formLink: "https://forms.gle/J9ARQjfpLfLDJYxLA",
+    flyer: ''
   },
   {
     eventId: "108",
@@ -288,6 +324,7 @@ const NON_TEC_EVENTS = [
     entryFee: "200",
     price: [15000, 1000, 500],
     formLink: "https://forms.gle/fRQuyBpk9areKYkM8",
+    flyer: ''
   },
   {
     eventId: "109",
@@ -301,6 +338,7 @@ const NON_TEC_EVENTS = [
     entryFee: "150",
     price: [1500, 1000],
     formLink: "https://forms.gle/QQicEbMF43Ar2hEV6",
+    flyer: BGMI_PubG
   },
 ];
 
