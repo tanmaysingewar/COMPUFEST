@@ -20,7 +20,7 @@ const port = Port_Lligat_Sans({
 
 export const metadata = {
   title: "Compufest 2024",
-  description: "",
+  description: "🎉 Get Ready for COMPUFEST 2k24!🎉",
 };
 
 export default function RootLayout({ children }) {
