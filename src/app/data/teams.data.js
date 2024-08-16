@@ -1,5 +1,5 @@
 import Abhishek_Bakde from '@/app/data/Profiles/Abhishek_Bakde.jpg';
-import Jay_Kahate from '@/app/data/Profiles/Jay_Kahate.png';
+import Jay_Kahate from '@/app/data/Profiles/Jay_Kahate.jpg';
 
 import Atharva_Jibhakate from '@/app/data/Profiles/Atharva_Jibhakate.jpeg';
 import Vedant_Rahate from '@/app/data/Profiles/Vedant_Rahate.jpg';
