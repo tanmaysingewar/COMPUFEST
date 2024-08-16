@@ -63,6 +63,7 @@ function Event() {
                       height={25}
                       className=""
                       priority
+                      alt="Event Title"
                     />
                     <div className="p-5 text-white text-center">
                       <div>

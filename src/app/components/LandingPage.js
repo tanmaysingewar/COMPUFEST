@@ -22,7 +22,7 @@ export default function LandingPage({ playing, setPlaying, setSelectTab }) {
       <div className="w-full max-w-5xl h-full px-4  mx-auto text-center lg:px-8 flex flex-col items-center justify-around">
         <div className="">
           <h1 className="font-bold tracking-tight text-white font-bills">
-            <span className="text-xs">Nagar Yuwak Shikshan Sanstha's</span>
+            <span className="text-xs">Nagar Yuwak Shikshan Sanstha</span>
             <br />
             <span className="lg:text-2xl text-lg">
               YESHWANTRAO CHAVAN COLLEGE OF ENGINEERING NAGPUR (INDIA)
@@ -81,11 +81,13 @@ export default function LandingPage({ playing, setPlaying, setSelectTab }) {
               className="shadow-2xl flex space-x-4 animate-pulse duration-5"
               height={40}
               src={MascotLine}
+              alt="Event Title"
             />
             <Image
               className="shadow-2xl flex space-x-4 cursor-pointer hover:scale-110 hover:brightness-125 duration-500 mt-3"
               onClick={() => setPlaying(true)}
               src={EventButton}
+              alt="Event Title"
             />
           </div>
         </div>
