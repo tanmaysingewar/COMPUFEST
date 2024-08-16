@@ -41,6 +41,7 @@ import Yogesh_Rathod from '@/app/data/Profiles/Yogesh_Rathod.jpeg';
 import Paras_Pethe from '@/app/data/Profiles/Paras_Pethe.jpeg';
 import Aayush_Borkar from '@/app/data/Profiles/Aayush_Borkar.jpeg';
 import Vinayak_Shinde from '@/app/data/Profiles/Vinayak_Shinde.jpg';
+import Gaurav_Magare from '@/app/data/Profiles/Gaurav_Magare.jpeg';
 
 
 // CTSC TEAMS
@@ -200,7 +201,7 @@ const COMPUFEST_CORE_TEAM = [
     },
     {
         name : 'Gaurav Magare',
-        image: '',
+        image: Gaurav_Magare,
         post : "Decoration Head"
     },
     {
