@@ -1,17 +1,26 @@
-import Global_Careers from '@/app/data/Flyer/Global_Careers.png';
-import Hawkins_ML_Hunt from '@/app/data/Flyer/Hawkins_ML_Hunt.png';
-import Web_Tech_Seminar from '@/app/data/Flyer/Web_Tech_Seminar.png';
-import Tech_Hackathon from '@/app/data/Flyer/Tech_Hackathon.png';
-import Optimizer from '@/app/data/Flyer/Optimizer.png';
-import Versus_Coding from '@/app/data/Flyer/Versus_Coding.png';
 
-import Lens_Crafter from '@/app/data/Flyer/Lens_Crafter.png';
-import Chess from '@/app/data/Flyer/Chess.png';
-import Tug_of_War from '@/app/data/Flyer/Tug_of_War.png';
-import Mock_Parliament from '@/app/data/Flyer/Mock_Parliament.png';
-import Smash_Kartz from '@/app/data/Flyer/Smash_Kartz.png';
-import Valorant from '@/app/data/Flyer/Valorant.png';
-import BGMI_PubG from '@/app/data/Flyer/BGMI_PubG.png';
+import Power_BI_Workshop from '@/app/data/Flyer/2.jpg';
+import Global_Careers from '@/app/data/Flyer/3.jpg';
+import Hawkins_ML_Hunt from '@/app/data/Flyer/4.jpg';
+import Web_Tech_Seminar from '@/app/data/Flyer/5.jpg';
+import Tech_Hackathon from '@/app/data/Flyer/6.jpg';
+import Video_Editing from '@/app/data/Flyer/7.jpg';
+import TechBuzz from '@/app/data/Flyer/8.jpg';
+import Resume_Building from '@/app/data/Flyer/9.jpg';
+import Optimizer from '@/app/data/Flyer/10.jpg';
+import UI_UX_Design from '@/app/data/Flyer/11.jpg';
+import Scripted_Secrets from '@/app/data/Flyer/12.jpg';
+import Versus_Coding from '@/app/data/Flyer/14.jpg';
+
+import Lens_Crafter from '@/app/data/Flyer/17.jpg';
+import Chess from '@/app/data/Flyer/18.jpg';
+import Tug_of_War from '@/app/data/Flyer/19.jpg';
+import Mock_Parliament from '@/app/data/Flyer/20.jpg';
+import Smash_Kartz from '@/app/data/Flyer/21.jpg';
+import Valorant from '@/app/data/Flyer/22.jpg';
+import Arm_Wrestling from '@/app/data/Flyer/23.jpg';
+import Open_Mic from '@/app/data/Flyer/25.jpg';
+import BGMI_PubG from '@/app/data/Flyer/26.jpg';
 
 const TEC_EVENTS = [
   {
@@ -26,7 +35,7 @@ const TEC_EVENTS = [
     entryFee: "99",
     price: [],
     formLink: "",
-    flyer: ''
+    flyer: Power_BI_Workshop
   },
   {
     eventId: "2",
@@ -96,7 +105,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [250],
     formLink: "",
-    flyer: ''
+    flyer: Video_Editing
   },
   {
     eventId: "7",
@@ -110,7 +119,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [500],
     formLink: "",
-    flyer: ''
+    flyer: TechBuzz
   },
   {
     eventId: "8",
@@ -124,7 +133,7 @@ const TEC_EVENTS = [
     entryFee: "0",
     price: [0],
     formLink: "",
-    flyer: ''
+    flyer: Resume_Building
   },
   {
     eventId: "9",
@@ -152,7 +161,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [],
     formLink: "",
-    flyer: ''
+    flyer: UI_UX_Design
   },
   {
     eventId: "11",
@@ -166,7 +175,7 @@ const TEC_EVENTS = [
     entryFee: "250",
     price: [2000, 1000],
     formLink: "https://forms.gle/4u5Un76d8MXvMGtg7",
-    flyer: ''
+    flyer: Scripted_Secrets
   },
   {
     eventId: "12",
@@ -180,7 +189,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [300],
     formLink: "",
-    flyer: ''
+    flyer: Versus_Coding
   },
   {
     eventId: "13",
@@ -310,7 +319,7 @@ const NON_TEC_EVENTS = [
     entryFee: "100",
     price: [3000, 1000],
     formLink: "https://forms.gle/J9ARQjfpLfLDJYxLA",
-    flyer: ''
+    flyer: Arm_Wrestling
   },
   {
     eventId: "108",
