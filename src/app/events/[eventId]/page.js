@@ -76,14 +76,14 @@ function Event() {
                           {event.title}
                         </p>
                         <div className="block g:hidden h-full justify-center items-center m-auto lg:hidden mt-10">
-                          {/* {event.flyer ? (
+                          {event.flyer ? (
                             <Image
                               src={event.flyer}
                               width={1000}
                               className="w-fit h-fit"
                               priority
                             />
-                          ) : null} */}
+                          ) : null}
                         </div>
                         <p className="font-bold text-red-600 font-port text-lg mt-5 lg:mt-0 text-center">
                           {event.subTitle}
@@ -171,14 +171,14 @@ function Event() {
                     </div>
                   </div>
                   <div className="hidden w-4/6 lg:block h-full justify-center items-center m-auto">
-                    {/* {event.flyer ? (
+                    {event.flyer ? (
                       <Image
                         src={event.flyer}
                         width={1000}
                         className="w-fit h-fit"
                         priority
                       />
-                    ) : null} */}
+                    ) : null}
                   </div>
                 </div>
               </div>
