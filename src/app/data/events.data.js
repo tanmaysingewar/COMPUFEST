@@ -10,7 +10,9 @@ import Resume_Building from '@/app/data/Flyer/9.jpg';
 import Optimizer from '@/app/data/Flyer/10.jpg';
 import UI_UX_Design from '@/app/data/Flyer/11.jpg';
 import Scripted_Secrets from '@/app/data/Flyer/12.jpg';
+import Dxgnathon from '@/app/data/Flyer/13.jpg';
 import Versus_Coding from '@/app/data/Flyer/14.jpg';
+import Mastering from '@/app/data/Flyer/15.jpg';
 
 import Lens_Crafter from '@/app/data/Flyer/17.jpg';
 import Chess from '@/app/data/Flyer/18.jpg';
@@ -70,7 +72,7 @@ const TEC_EVENTS = [
     title: "Webnetics",
     subTitle: "Discover the Latest in Web Tech",
     dec: "A seminar focused on the latest trends and technologies in web development along with hands-on project building.",
-    date: "21 August 2024",
+    date: "20 August 2024",
     time: "10:00 AM",
     venue: "AIDS Lab-2",
     duration: "2 hours",
@@ -189,7 +191,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [300],
     formLink: "",
-    flyer: Versus_Coding
+    flyer: Dxgnathon
   },
   {
     eventId: "13",
@@ -217,7 +219,7 @@ const TEC_EVENTS = [
     entryFee: "50",
     price: [],
     formLink: "",
-    flyer: ''
+    flyer: Mastering
   },
 ];
 
@@ -336,6 +338,20 @@ const NON_TEC_EVENTS = [
     flyer: ''
   },
   {
+    eventId: "110",
+    title: "Open Mic",
+    subTitle: "Lets your voice be heard",
+    dec: "A music competition where participants showcase their skills.",
+    date: "24 August 2024",
+    time: "2 PM",
+    venue: "Lab 2",
+    duration: "2 hours",
+    entryFee: "100",
+    price: [1000, 500],
+    formLink: "https://docs.google.com/forms/d/e/1FAIpQLSe29FIp9bPF4bI84a8l83wCPANVEmNeckb3KKzfxM7mr8J5ug/viewform",
+    flyer: Open_Mic
+  }
+  ,{
     eventId: "109",
     title: "BGMI (PubG)",
     subTitle: "Battle for Glory",
