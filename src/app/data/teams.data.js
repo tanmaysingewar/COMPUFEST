@@ -42,6 +42,7 @@ import Paras_Pethe from '@/app/data/Profiles/Paras_Pethe.jpeg';
 import Aayush_Borkar from '@/app/data/Profiles/Aayush_Borkar.jpeg';
 import Vinayak_Shinde from '@/app/data/Profiles/Vinayak_Shinde.jpg';
 import Gaurav_Magare from '@/app/data/Profiles/Gaurav_Magare.jpeg';
+import Manas_Tijare from '@/app/data/Profiles/Manas_Tijare.jpg';
 
 
 // CTSC TEAMS
@@ -256,7 +257,12 @@ const COMPUFEST_TEAMS_SEMICORE = [
         name : 'Sneha Satarke',
         image: Sneha_Satarke,
         post : "Event Management & Hall Management Co-Head"
-    }
+    },
+    {
+        name : 'Manas Tijare',
+        image: Manas_Tijare,
+        post : "Sports Co-Head"
+    },
 ]
 
 export {PRESIDENTS,CTSC_CORE_TEAM, CTSC_SEMICORE_TEAM, COMPUFEST_CORE_TEAM, COMPUFEST_TEAMS_SEMICORE}

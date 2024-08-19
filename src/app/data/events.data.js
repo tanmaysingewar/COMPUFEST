@@ -3,15 +3,15 @@ import Power_BI_Workshop from '@/app/data/Flyer/2.jpg';
 import Global_Careers from '@/app/data/Flyer/3.jpg';
 import Hawkins_ML_Hunt from '@/app/data/Flyer/4.jpg';
 import Web_Tech_Seminar from '@/app/data/Flyer/5.jpg';
-import Tech_Hackathon from '@/app/data/Flyer/6.jpg';
+import Tech_Hackathon from '@/app/data/Flyer/6.jpeg';
 import Video_Editing from '@/app/data/Flyer/7.jpg';
 import TechBuzz from '@/app/data/Flyer/8.jpg';
 import Resume_Building from '@/app/data/Flyer/9.jpg';
 import Optimizer from '@/app/data/Flyer/10.jpg';
-import UI_UX_Design from '@/app/data/Flyer/11.jpg';
+import UI_UX_Design from '@/app/data/Flyer/11.png';
 import Scripted_Secrets from '@/app/data/Flyer/12.jpg';
 import Dxgnathon from '@/app/data/Flyer/13.jpg';
-import Versus_Coding from '@/app/data/Flyer/14.jpg';
+import Versus_Coding from '@/app/data/Flyer/14.jpeg';
 import Mastering from '@/app/data/Flyer/15.jpg';
 
 import Lens_Crafter from '@/app/data/Flyer/17.jpg';
@@ -47,7 +47,7 @@ const TEC_EVENTS = [
     date: "17 August 2024",
     time: "7:00 PM",
     venue: "Online",
-    duration: "",
+    duration: "2 hours",
     entryFee: "0",
     price: [],
     formLink: "",
@@ -61,7 +61,7 @@ const TEC_EVENTS = [
     date: "17, 18, 19 August 2024",
     time: "7:00 PM",
     venue: "Online",
-    duration: "",
+    duration: "3 Days",
     entryFee: "70",
     price: [900, 500, 300],
     formLink: "https://forms.gle/cMgbSws3MMR85njVA",
@@ -91,7 +91,7 @@ const TEC_EVENTS = [
     venue: "AIDS Lab-2",
     duration: "9 hours",
     entryFee: "250",
-    price: [40000],
+    price: [78000],
     formLink: "https://forms.gle/R9sAM2zcABp2jatF9",
     flyer: Tech_Hackathon
   },
@@ -106,7 +106,7 @@ const TEC_EVENTS = [
     duration: "2 hours",
     entryFee: "50",
     price: [250],
-    formLink: "",
+    formLink: "https://me-qr.com/PoKJvOP1",
     flyer: Video_Editing
   },
   {
@@ -120,7 +120,7 @@ const TEC_EVENTS = [
     duration: "2 hours",
     entryFee: "50",
     price: [500],
-    formLink: "",
+    formLink: "https://forms.gle/tkgjLDEBc7yELdmt8",
     flyer: TechBuzz
   },
   {
@@ -134,7 +134,7 @@ const TEC_EVENTS = [
     duration: "2 hours",
     entryFee: "0",
     price: [0],
-    formLink: "",
+    formLink: "https://me-qr.com/H7WuEZx8",
     flyer: Resume_Building
   },
   {
@@ -162,7 +162,7 @@ const TEC_EVENTS = [
     duration: "",
     entryFee: "50",
     price: [],
-    formLink: "",
+    formLink: "https://me-qr.com/BaMsbS1F",
     flyer: UI_UX_Design
   },
   {
@@ -186,11 +186,11 @@ const TEC_EVENTS = [
     dec: "A design marathon that challenges your creativity and design skills.",
     date: "24 August 2024",
     time: "1:00 PM",
-    venue: "AIDS -Lab 3",
+    venue: "AIDS - Lab 3",
     duration: "14 hours",
     entryFee: "50",
     price: [300],
-    formLink: "",
+    formLink: "https://forms.gle/spaxHRz3WjwVPvUL9",
     flyer: Dxgnathon
   },
   {
@@ -218,7 +218,7 @@ const TEC_EVENTS = [
     duration: "",
     entryFee: "50",
     price: [],
-    formLink: "",
+    formLink: "https://forms.gle/gy9NNNvWwHXdJqWNA",
     flyer: Mastering
   },
 ];
